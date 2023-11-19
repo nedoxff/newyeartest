@@ -1,0 +1,119 @@
+{
+	"loading": "Loading...",
+	"loading_description": "This might take from a few seconds to several minutes depending on your internet connection.",
+
+	"welcome": {
+		"buttons": {
+			"ok": "ok",
+			"letsGo": "let's go",
+			"yes": "sure",
+			"no": "no",
+			"soundsGood": "sounds good"
+		},
+		"hello": "Greetings.",
+		"continue": "Continue",
+		"dialog1": "I understand that you expected to see a christmas-y atmosphere here, but sadly I don't have much time.",
+		"dialog2": "You see, my boss,<action> Santa Claus,<action> is in dire need of some helping hands.",
+		"dialog3": "Would you perhaps like to help him?",
+		"reject1": "Fair.<action> I can't really force you.",
+		"reject2": "You can tell me if you change your mind.",
+		"changedMyMind": "i've changed my mind",
+		"accept1": "Splendid!",
+		"accept2": "The interview part is rather simple.",
+		"accept3": "You pass a small test,<action> I analyze it,<action> and based on your answers I decide who you're going to work as.",
+		"start": "I think we're ready to begin the test then."
+	},
+
+	"test": {
+		"questionLetter": "Q",
+		"1": {
+			"text": "You're better at working...",
+			"answer1": "Alone, when you're on your own",
+			"answer2": "In a large team, where there's constant communication"
+		},
+		"2": {
+			"text": "You picked one of your friends on Secret Santa, and it's now time to prepare the present. You...",
+			"answer1": "Will make the gift yourself",
+			"answer2": "Go to the store and buy it there"
+		},
+		"3": {
+			"text": "If you're asked to remind someone about something in a few hours, you...",
+			"answer1": "Will put a reminder and not forget",
+			"answer2": "Might not remind them, because your memory is fuzzy nowadays"
+		},
+		"4": {
+			"text": "You got lucky in a lottery and won a trip to France. You...",
+			"answer1": "Will lay in bed and imagine eating croissants while standing near the Eiffel Tower",
+			"answer2": "Will research all information about the pros and cons of the country"
+		},
+		"5": {
+			"text": "A fairy appears in front of you and offers 100 million dollars, but on one condition: you won't be able to make money in any other way for the next 10 years. Will you take the deal?",
+			"answer1": "Of course!",
+			"answer2": "I'll have to think if it's worth it"
+		},
+		"6": {
+			"text": "Given 7 nails, arrange 6 nails in a way that doesn't make them touch the wooden platform. Your solution...",
+			"answer1": "Do like the guy on the left",
+			"answer2": "Do like the guy on the right"
+		},
+		"7": {
+			"text": "A huge amount of people showed up to a Christmas party and are talking about something you don't understand. You...",
+			"answer1": "Will try to join the conversation",
+			"answer2": "Will peacefully listen to them in the corner"
+		},
+		"8": {
+			"text": "You were given lots of overtime work. You...",
+			"answer1": "Will complete everything in time, because that's required",
+			"answer2": "Will pity yourself and complete a part of the work"
+		},
+		"9": {
+			"text": "You've fallen out with a gingerbread man. Your actions:",
+			"answer1": "Make up and forgive them",
+			"answer2": "Eat the wrongdoer"
+		}
+	},
+
+	"intrigue": {
+		"thanks": "Thank you.",
+		"pleaseEnterName": "To complete the interview, please enter your name.",
+		"pleaseWait": "One moment.",
+		"interestingCase": "To be honest, your results have quite surprised me.",
+		"interestingCase2": "I think I have a great match for you.",
+		"perfectMatch": "Great! I have the perfect job for you.",
+		"letsSeeCard": "Let's see your employee card."
+	},
+
+	"jobs": {
+		"polarBear": "Guard/Bodyguard",
+		"elf": "Head of the toy-making department",
+		"grinch": "Children spooker",
+		"rudolf": "Leader of Orient Express",
+		"gingerman": "Minister of sweet deals",
+		"blizzard": "Chief pre-holiday mood designer"
+	},
+
+	"names": {
+		"you": "You're",
+		"polarBear": "a polar bear",
+		"elf": "an elf",
+		"grinch": "Grinch",
+		"rudolf": "Rudolf",
+		"gingerman": "a gingerbread cookie",
+		"blizzard": "a blizzard"
+	},
+
+	"general": {
+		"share": "Share",
+		"deviceDoesNotSupportSharing": "Unfortunately, your device does not support sharing files from browsers.",
+		"pcDevice": "Sharing is not natively supported on PC platforms. The employee card has been copied to your clipboard.",
+		"thankYouForPlaying": "Thank you for playing!"
+	},
+
+	"card": {
+		"title": "CLAUS CORPORATION ASSOCIATE",
+		"name": "Name",
+		"job": "Job",
+		"workingSince": "Working since",
+		"workingUntil": "Working until"
+	}
+}
