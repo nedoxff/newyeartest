@@ -4,8 +4,6 @@
 	import { teller } from '$lib/types/TellerAnimationsTypes';
 	import OpenedEye from '$lib/assets/teller/eye-outline.svg';
 	import AnimatedText from '../AnimatedText.svelte';
-	import { onMount } from 'svelte';
-	import { startTimeline } from '$lib/timelines/StartTimeline';
 
 	export function continueTimeline(index?: number) {
 		playFrame(index === undefined ? tools.currentFrameIndex + 1 : index);

@@ -68,7 +68,7 @@ export function pickMatch(): [string, boolean] {
 
 	// it is 3 in the morning
 	const sum = (first: number[], second: number[]) => {
-		if (first.length !== second.length) throw new Error('length of compares arrays must be equal');
+		if (first.length !== second.length) throw new Error('length of compared arrays must be equal');
 		let count = 0;
 		for (let i = 0; i < first.length; i++) if (first[i] !== second[i]) count++;
 		return count;

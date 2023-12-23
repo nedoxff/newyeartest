@@ -187,14 +187,8 @@
 				</div>
 
 				<div class="qcc gap-5" id="q-6-q">
-					<img
-						src="$lib/assets/test/6_1.jpg"
-						class="w-full lg:w-[unset] h-3/4 rounded-2xl"
-					/>
-					<img
-						src="$lib/assets/test/6_2.jpg"
-						class="w-full lg:w-[unset] h-3/4 rounded-2xl"
-					/>
+					<img src="$lib/assets/test/6_1.jpg" class="w-full lg:w-[unset] h-3/4 rounded-2xl" />
+					<img src="$lib/assets/test/6_2.jpg" class="w-full lg:w-[unset] h-3/4 rounded-2xl" />
 				</div>
 				<div class="qcc" id="q-6-a1">
 					<img src="$lib/assets/test/6_1.jpg" class="h-3/4 rounded-2xl" />
@@ -262,7 +256,7 @@
 
 <style>
 	.wavy::before {
-		/* lmao */
+		/* not the best method to implement this, but should cover most devices and work reliably */
 		content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 		position: absolute;
 		width: 100%;
@@ -276,7 +270,7 @@
 		text-decoration-line: underline;
 	}
 
-	/* question-content-container */
+	/* short for "question-content-container" */
 	.qcc {
 		position: absolute;
 		top: 0;

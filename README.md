@@ -5,4 +5,4 @@ can also be found and played [here](https://nedoxff.github.io/projects/newyear?i
 
 # tools
 
-svelte, vite, typescript, all the good stuff (im in a lot of pain, and have almost never used any js frameworks, so bear with me).
+svelte, vite, typescript, all the good stuff.

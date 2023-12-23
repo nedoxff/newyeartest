@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 	import { cardData } from '$lib';
 	import anime from 'animejs';
@@ -9,7 +8,7 @@
 	export let onLoaded: () => void;
 
 	onMount(() => {
-		if($cardData === undefined) throw new Error("card data blob was undefined");
+		if ($cardData === undefined) throw new Error('card data blob was undefined');
 		cardNode.src = URL.createObjectURL($cardData);
 		cardNode.onload = onLoaded;
 	});
@@ -45,11 +44,16 @@
 	id="card-container"
 	on:click={reveal}
 >
-	<img bind:this={cardNode} class="w-full aspect-[500/275] absolute top-0 left-0" id="card"/>
+	<img
+		bind:this={cardNode}
+		alt="employee card"
+		class="w-full aspect-[500/275] absolute top-0 left-0"
+		id="card"
+	/>
 	<div
 		class="w-full aspect-[500/275] rounded-xl absolute top-0 left-0 bg-gray-600 z-10 flex flex-col justify-center items-center"
 		id="card-back"
 	>
-		<img src="$lib/assets/teller/santa-claus.svg" class="h-1/2" />
+		<img src="$lib/assets/teller/santa-claus.svg" alt="santa claus" class="h-1/2" />
 	</div>
 </div>

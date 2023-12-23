@@ -82,7 +82,7 @@ export let startTimeline: Timeline = () => [
 		text: get(format)('welcome.dialog3'),
 		callbackDelay: 3000,
 		callback: () => startTimelineStorage.requestButtonsVisible.set(true),
-		next: (newIndex?: number) => startTimelineStorage.requestButtonsVisible.set(false)
+		next: () => startTimelineStorage.requestButtonsVisible.set(false)
 	},
 	{
 		id: 4,

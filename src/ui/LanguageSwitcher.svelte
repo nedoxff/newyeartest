@@ -10,7 +10,7 @@
 		opened = false;
 	}
 	onMount(() => {
-		if (!$locales.includes($locale ?? '')) $locale = 'ru'; // i don't know how this could actually happen but just in case
+		if (!$locales.includes($locale ?? '')) $locale = 'ru'; // just in case
 	});
 </script>
 

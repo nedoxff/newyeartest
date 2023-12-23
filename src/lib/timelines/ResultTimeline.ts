@@ -2,7 +2,7 @@ import { tools, type Timeline } from '$lib/types/TimelineTypes';
 import { get, writable, type Writable } from 'svelte/store';
 import { format } from 'svelte-i18n';
 import { teller } from '$lib/types/TellerAnimationsTypes';
-import { cardData, result, state, userid, username } from '$lib';
+import { result, state, userid, username } from '$lib';
 import { pickMatch } from './Questions';
 import { AppState } from '$lib/types/AppState';
 import { renderEmployeeCard } from '$lib/helpers/CardRenderer';
@@ -39,9 +39,9 @@ export let resultTimeline: Timeline = () => [
 			renderEmployeeCard(userid, get(username), get(format)(`jobs.${get(result)[0]}`)).then(() => {
 				setTimeout(() => tools.tellerNode?.continueTimeline(get(result)[1] ? 5 : 3), 2000);
 			});
-		},
+		}
 	},
-	//interesting case
+	// interesting case
 	{
 		id: 3,
 		type: 'default',
@@ -62,7 +62,7 @@ export let resultTimeline: Timeline = () => [
 			tools.tellerNode?.continueTimeline(6);
 		}
 	},
-	//perfect match
+	// perfect match
 	{
 		id: 5,
 		type: 'default',

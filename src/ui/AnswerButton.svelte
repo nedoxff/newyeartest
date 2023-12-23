@@ -90,7 +90,7 @@
 
 <style>
 	.button-initial-border {
-		box-shadow: inset 0px 0px 0px 0.1rem #000;
+		box-shadow: inset 0 0 0 0.1rem #000;
 	}
 
 	.clickable:hover {

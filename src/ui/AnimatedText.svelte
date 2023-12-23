@@ -95,10 +95,10 @@
 					class="text-white {`text-${size}`} {`text-${alignment}`}"
 					transition:fly|global={{ y: 15, duration: FADE_IN_ANIMATION_DURATION, opacity: 0 }}
 					on:introend={() => {
-						if (chunks.length === 1 && i == 0) setTimeout(() => onShown?.(), delay);
+						if (chunks.length === 1 && i === 0) setTimeout(() => onShown?.(), delay);
 					}}
 					on:outroend={() => {
-						if (i == 0) onHidden?.();
+						if (i === 0) onHidden?.();
 					}}
 				>
 					{chunk}

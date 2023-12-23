@@ -7,7 +7,7 @@ const lastCommitHash = child.execSync('git rev-parse --short HEAD').toString();
 export default defineConfig({
 	plugins: [sveltekit()],
 	define: {
-		__VERSION_TAG__: JSON.stringify('1.0release'),
+		__VERSION_TAG__: JSON.stringify('1.1release'),
 		__LAST_COMMIT_HASH__: JSON.stringify(lastCommitHash)
 	}
 });

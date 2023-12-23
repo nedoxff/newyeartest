@@ -9,11 +9,6 @@
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	import Teller from './drawable/Teller.svelte';
 	import { onMount } from 'svelte';
-	/* if (import.meta.hot) {
-		import.meta.hot.on('vite:afterUpdate', () => {
-			window.location.reload();
-		});
-	} */
 	console.log(`loaded successfully | locale: ${$locale}`);
 
 	let genericButtonNode: HTMLButtonElement;
@@ -60,7 +55,7 @@
 	<div class="w-screen p-3 lg:w-1/2 lg:p-0 h-[100dvh] flex flex-col justify-center items-center">
 		<Teller bind:this={tools.tellerNode} />
 		{#if languageSwitcherVisible}
-			<span in:slide out:slide>
+			<div in:slide out:slide>
 				<div
 					class="flex flex-row gap-2"
 					in:fly={{ x: 0, y: 5, delay: 1000, duration: 500, opacity: 0 }}
@@ -92,10 +87,10 @@
 				>
 					version: {__VERSION_TAG__} • {__LAST_COMMIT_HASH__}
 				</h4>
-			</span>
+			</div>
 		{/if}
 		{#if genericButtonVisible}
-			<span in:slide out:slide>
+			<div in:slide out:slide>
 				<div
 					class="flex flex-row gap-2"
 					in:fly={{ x: 0, y: 5, delay: 1000, duration: 500, opacity: 0 }}
@@ -120,10 +115,10 @@
 						</svg></button
 					>
 				</div>
-			</span>
+			</div>
 		{/if}
 		{#if requestButtonsVisible}
-			<span in:slide out:slide>
+			<div in:slide out:slide>
 				<div
 					class="flex flex-row gap-2"
 					in:fly={{ x: 0, y: 5, delay: 1000, duration: 500, opacity: 0 }}
@@ -162,7 +157,7 @@
 						</svg></button
 					>
 				</div>
-			</span>
+			</div>
 		{/if}
 	</div>
 </div>

@@ -19,12 +19,6 @@
 	};
 
 	onMount(() => {
-		if (profile.length === 0) {
-			// live server shenanigans
-			//profile.push(...prompt()!.split(",").map(x => parseInt(x.trim())));
-			profile.push(0, 1, 0, 1, 1, 1, 1, 0, 1);
-		}
-
 		nameInputVisible.subscribe((v) => {
 			isInputVisible = v;
 		});

@@ -10,6 +10,5 @@ export function generateCompactBarcode(text, scale, columns) {
 		columns: columns,
 		scale: scale
 	});
-	const data = canvas.toDataURL('image/png');
-	return data;
+	return canvas.toDataURL('image/png');
 }

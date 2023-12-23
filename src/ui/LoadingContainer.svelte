@@ -37,12 +37,12 @@
 					};
 				} catch (e) {
 					console.error(`failed to load image: ${e}`);
-					resolve(); // not critical
+					resolve(); // the error is not critical since the image will load later anyways
 				}
 			});
 		while (preloadCounter < urls.length) {
 			await load(preloadCounter);
-			preloadCounter++; //for loop doesn't trigger the update
+			preloadCounter++; // for loop doesn't trigger the update
 		}
 
 		loadedFolders.set(name, urls);
@@ -96,7 +96,7 @@
 		<h4 class="text-white text-xl font-normal">
 			({preloadCounter}/{preloadCount}) • ({totalCounter}/{totalCount})
 		</h4>
-		<img bind:this={preloadingContainerNode} class="w-px h-px opacity-0" />
+		<img bind:this={preloadingContainerNode} alt="image loader" class="w-px h-px opacity-0" />
 	</div>
 </div>
 
