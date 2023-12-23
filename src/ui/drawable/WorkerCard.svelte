@@ -10,7 +10,7 @@
 	onMount(() => {
 		if ($cardData === undefined) throw new Error('card data blob was undefined');
 		cardNode.onload = onLoaded;
-		cardNode.src = URL.createObjectURL($cardData);
+		cardNode.src = window.URL.createObjectURL($cardData);
 	});
 
 	let revealed: boolean = false;
