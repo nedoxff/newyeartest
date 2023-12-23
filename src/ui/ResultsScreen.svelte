@@ -76,7 +76,7 @@
 				{$_(`names.${get(result)[0]}`)}!
 			</h1>
 		{/if}
-		<div class="w-fll lg:w-1/3 aspect-[500/275] opacity-0" bind:this={cardContainer}>
+		<div class="w-full lg:w-1/3 aspect-[500/275] opacity-0" bind:this={cardContainer}>
 			<WorkerCard onLoaded={playAnimation} onRevealed={() => (textVisible = true)} />
 		</div>
 		{#if textVisible}
