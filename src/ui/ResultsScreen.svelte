@@ -10,22 +10,14 @@
 	let loading: boolean = false;
 	let cardContainer: HTMLDivElement;
 
-	const isPC = () => {
-		const platform = window.navigator.userAgent;
-		return (
-			platform.includes('Win') ||
-			platform.includes('Mac') ||
-			platform.includes('X11') ||
-			platform.includes('Linux')
-		);
-	};
-
 	const shareCard = async () => {
 		if (location.protocol !== 'https:') return;
 		loading = true;
 		if ($cardData === undefined) return;
 
-		if (isPC()) {
+		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+		if (!isMobile) {
 			try {
 				navigator.clipboard.write([new ClipboardItem({ [$cardData.type]: $cardData })]).then(() => {
 					alert($_('general.pcDevice'));
