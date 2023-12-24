@@ -2,7 +2,7 @@ import { tools, type Timeline } from '$lib/types/TimelineTypes';
 import { get, writable, type Writable } from 'svelte/store';
 import { format } from 'svelte-i18n';
 import { teller } from '$lib/types/TellerAnimationsTypes';
-import { result, state, userid, username } from '$lib';
+import { profile, result, state, userid, username } from '$lib';
 import { pickMatch } from './Questions';
 import { AppState } from '$lib/types/AppState';
 import { renderEmployeeCard } from '$lib/helpers/CardRenderer';
@@ -35,7 +35,7 @@ export let resultTimeline: Timeline = () => [
 		text: get(format)('intrigue.pleaseWait'),
 		callbackDelay: 0,
 		before: () => {
-			result.set(pickMatch());
+			result.set(pickMatch(profile));
 			renderEmployeeCard(userid, get(username), get(format)(`jobs.${get(result)[0]}`)).then(() => {
 				setTimeout(() => tools.tellerNode?.continueTimeline(get(result)[1] ? 5 : 3), 2000);
 			});

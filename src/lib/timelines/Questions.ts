@@ -1,7 +1,6 @@
 import type { Question } from '$lib/types/TestTypes';
 import { get } from 'svelte/store';
 import { format } from 'svelte-i18n';
-import { profile } from '$lib';
 
 const QUESTION_COUNT: number = 9;
 
@@ -51,16 +50,16 @@ export const characters: Map<string, number[]> = new Map<string, number[]>([
 	['gingerman', [0, 0, 1, 0, 1, 0, 1, 0, 0]]
 ]);
 
-export function pickMatch(): [string, boolean] {
-	if (profile.length !== QUESTION_COUNT)
+export function pickMatch(arr: number[]): [string, boolean] {
+	if (arr.length !== QUESTION_COUNT)
 		throw new Error(
-			`Invalid profile array passed to pickMatch (length should be ${QUESTION_COUNT}, got ${profile.length})`
+			`Invalid profile array passed to pickMatch (length should be ${QUESTION_COUNT}, got ${arr.length})`
 		);
 
-	console.log(`user profile: ${profile}`);
+	console.log(`user profile: ${arr}`);
 	const entries = Array.from(characters.entries());
 
-	const perfectMatch = entries.find((e) => JSON.stringify(e[1]) === JSON.stringify(profile));
+	const perfectMatch = entries.find((e) => JSON.stringify(e[1]) === JSON.stringify(arr));
 	if (perfectMatch != null) {
 		console.log(`found a perfect match: ${perfectMatch[0]}`);
 		return [perfectMatch[0], true];
@@ -74,7 +73,7 @@ export function pickMatch(): [string, boolean] {
 		return count;
 	};
 
-	const differences = entries.map((x) => sum(x[1], profile));
+	const differences = entries.map((x) => sum(x[1], arr));
 	console.log(`differences array: ${differences}`);
 	const index = differences.indexOf(Math.min(...differences));
 	const closestMatch = entries.map((x) => x[0])[index];
