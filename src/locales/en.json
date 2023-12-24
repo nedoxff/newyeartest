@@ -8,7 +8,8 @@
 			"letsGo": "let's go",
 			"yes": "sure",
 			"no": "no",
-			"soundsGood": "sounds good"
+			"soundsGood": "sounds good",
+			"changedMyMind": "i've changed my mind"
 		},
 		"hello": "Greetings.",
 		"continue": "Continue",
@@ -17,7 +18,6 @@
 		"dialog3": "Would you perhaps like to help him?",
 		"reject1": "Fair.<action> I can't really force you.",
 		"reject2": "You can tell me if you change your mind.",
-		"changedMyMind": "i've changed my mind",
 		"accept1": "Splendid!",
 		"accept2": "The interview part is rather simple.",
 		"accept3": "You pass a small test,<action> I analyze it,<action> and based on your answers I decide who you're going to work as.",
